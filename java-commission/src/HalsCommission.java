@@ -24,12 +24,11 @@ public class HalsCommission {
         // Display the pay report for the sales person.
         System.out.println("\nPay Report");
         System.out.println("-------------------------");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-
+        System.out.println("Sales: $" + dollar.format(payInfo.getSales()));
+        System.out.println("Commision Rate: " + percent.format(payInfo.getRate()));
+        System.out.println("Commission: $" + dollar.format(payInfo.getCommision()));
+        System.out.println("Advanced Pay: $" + dollar.format(payInfo.getAdvance()));
+        System.out.println("Remaining Pay: $" + dollar.format(payInfo.getPay()));
+        keyboard.close();
     }
 }
