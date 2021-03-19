@@ -6,6 +6,7 @@ import java.util.Scanner; // Needed for scanner class
 
 public class BankAccountTest {
     public static void main(String[] args) {
+        // BankAccount account;
         BankAccount account;
         double balance, interestRate, pay, cashNeeded;
 
@@ -36,5 +37,6 @@ public class BankAccountTest {
 
         System.out.println("This month you have earned $" + account.getInterest() + "in intereset.");
         System.out.println("Now your balance is $" + account.getBalance());
+        keyboard.close();
     }
 }
